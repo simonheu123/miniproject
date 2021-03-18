@@ -45,11 +45,11 @@ function outputData(person) {
     row.classList.add('actor');
   }
   // Add a class to Austrians
-  if ((new RegExp(/austrian/gi)).test(person.profession)) {
+  if ((new RegExp(/1900-1945/gi)).test(person.birthyear)) {
     row.classList.add('austrian');
   }
   // Add a class to Autor*in
-  if ((new RegExp(/author/gi)).test(person.profession)) {
+  if ((new RegExp(/prince|archduke|king|queen|princess/gi)).test(person.profession)) {
     row.classList.add('auto');
   }
 
