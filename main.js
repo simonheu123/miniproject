@@ -41,7 +41,7 @@ function outputData(person) {
 
   // REGEX RULES AND ADDING CSS CLASSES TO ROWS FOR TOGGLING
   // Add a class to actors
-  if ((new RegExp(/actor|actress/gi)).test(person.profession)) {
+  if ((new RegExp(/american|america/gi)).test(person.profession)) {
     row.classList.add('actor');
   }
   // Add a class to Austrians
