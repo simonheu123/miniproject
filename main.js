@@ -55,6 +55,9 @@ function outputData(person) {
   if ((new RegExp(/singer|musician|pianist|drummer|DJ|rapper|jazz/gi)).test(person.profession)) {
     row.classList.add('musician');
   }
+  if ((new RegExp(/Iran|Haiti|Fiji|Indian|Turkey|Nepal|Lucia|Cuban|Brazilian?|Israeli|African|Argentine|Bolivia|Kenyan?|Madagascar|Abkhazia|Japanese|Korean?|Cape|SFR|Mexican|Afghanistan|Belize|Vietnam|Chilean|Costa|Libyan?|Uruguay/gi)).test(person.profession)) {
+    row.classList.add('nonwestern');
+  }
 
 }
 

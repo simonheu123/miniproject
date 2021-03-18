@@ -9,6 +9,7 @@ button {
   padding: 8px;
 }
 
+
 .redButton{
   background-color: pink;
 }
@@ -24,9 +25,13 @@ button {
 .pinkButton{
   background-color: pink;
 }
+.orangeButton {
+  background-color: orange;
+}
 
 table, th, td {
   border: 1px solid black;
+  background-color: grey;
 }
 
 table {
