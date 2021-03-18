@@ -42,15 +42,18 @@ function outputData(person) {
   // REGEX RULES AND ADDING CSS CLASSES TO ROWS FOR TOGGLING
   // Add a class to actors
   if ((new RegExp(/american|america/gi)).test(person.profession)) {
-    row.classList.add('actor');
+    row.classList.add('americans');
   }
   // Add a class to Austrians
   if ((new RegExp(/1[8,9][0-3][0-9]|194[0-5]/gi)).test(person.birthyear)) {
-    row.classList.add('austrian');
+    row.classList.add('before');
   }
   // Add a class to Autor*in
   if ((new RegExp(/prince|archduke|king|queen|princess/gi)).test(person.profession)) {
-    row.classList.add('auto');
+    row.classList.add('royalty');
+  }
+  if ((new RegExp(/singer|musician|pianist|drummer|DJ|rapper|jazz/gi)).test(person.profession)) {
+    row.classList.add('musician');
   }
 
 }

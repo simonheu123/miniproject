@@ -2,7 +2,7 @@ body {
   padding: 0 30px 0 30px;
 }
 h1 {
-  color: blue 
+  color: blue
 }
 button {
   font-size: 16px;
@@ -20,6 +20,9 @@ button {
 }
 .yellowButton{
   background-color: yellow;
+}
+.pinkButton{
+  background-color: pink;
 }
 
 table, th, td {
